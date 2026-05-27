@@ -1,28 +1,232 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Praneesh Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praneesh | Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#111827;
+            color:white;
+        }
+
+        header{
+            background:#1f2937;
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+        }
+
+        header h2{
+            color:#38bdf8;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            margin-left:20px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#38bdf8;
+        }
+
+        .hero{
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .hero h1{
+            font-size:50px;
+            margin-bottom:15px;
+        }
+
+        .hero span{
+            color:#38bdf8;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 22px;
+            background:#38bdf8;
+            color:black;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:bold;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#38bdf8;
+        }
+
+        .skills{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:15px;
+        }
+
+        .skill{
+            background:#1f2937;
+            padding:15px 25px;
+            border-radius:10px;
+        }
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#1f2937;
+            padding:20px;
+            border-radius:12px;
+        }
+
+        .card h3{
+            margin-bottom:10px;
+        }
+
+        .contact{
+            text-align:center;
+        }
+
+        .contact p{
+            margin:10px 0;
+        }
+
+        footer{
+            text-align:center;
+            background:#1f2937;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello, I'm Praneesh</h1>
 
+<header>
+    <h2>Praneesh</h2>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hello, I'm <span>Praneesh</span></h1>
+
+    <p>3rd Year CSE Student | Aspiring Software Engineer</p>
+
+    <a href="resume.pdf" class="btn" target="_blank">
+        View Resume
+    </a>
+</section>
+
+<section id="about">
     <h2>About Me</h2>
-    <p>3rd Year CSE Student interested in Software Development.</p>
 
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        I am a 3rd year Computer Science Engineering student
+        passionate about software development, web technologies,
+        problem solving, and building real-world applications.
+        I am actively seeking opportunities in IT companies
+        to enhance my technical and professional skills.
+    </p>
+</section>
+
+<section id="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>Python</li>
-        <li>DBMS</li>
-        <li>MERN Stack</li>
-    </ul>
 
+    <div class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">DBMS</div>
+        <div class="skill">SQL</div>
+        <div class="skill">MERN Stack</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
     <h2>Projects</h2>
-    <p>Online Banking Portal</p>
-    <p>Student Management System</p>
 
+    <div class="projects">
+
+        <div class="card">
+            <h3>Online Banking Portal</h3>
+            <p>
+                MERN-based banking system with login,
+                transactions and account management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Student Management System</h3>
+            <p>
+                A system to manage student details,
+                attendance and academic records.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Personal portfolio website hosted
+                using GitHub Pages.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
     <h2>Contact</h2>
-    <p>Email: yourmail@gmail.com</p>
+
+    <div class="contact">
+        <p>Email: yourmail@gmail.com</p>
+        <p>GitHub: github.com/Praneesh122</p>
+        <p>LinkedIn: Add your LinkedIn link</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Praneesh | Portfolio</p>
+</footer>
+
 </body>
 </html>
